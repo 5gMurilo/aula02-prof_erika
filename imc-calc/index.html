@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
     <script src="./js/index.js"></script>
 </head>
 <body>
     <main>
-        <div>
+        <form onsubmit="calcularIMC(event)">
+            <h1>Calcule seu IMC</h1>
             <div class="field">
                 <p>Digite seu peso</p>
-                <input type="number" id="weight" required>
+                <input type="number" id="weight" required class="fieldInput">
             </div>
             <div class="field">
                 <p>Digite sua altura em cm</p>
-                <input type="number" id="size" required>
+                <input type="number" id="size" required class="fieldInput">
             </div>
 
             <button type="buton" onclick="calcularIMC()">Calcular</button>
-        </div>
+        </form>
 
         <p id="result"></p>
     </main>
