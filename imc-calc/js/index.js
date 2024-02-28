@@ -20,6 +20,10 @@ function calcularIMC(event) {
         result.textContent = `Seu IMC É DE ${calc.toFixed(2)} - VOCÊ ESTA ACIMA DO PESO`
     }else if (calc >= 30 && calc <= 34.99) { 
         result.textContent = `Seu IMC É DE ${calc.toFixed(2)} - OBESIDADE GRAU 1`
+    }else if (calc >= 35 && calc <= 39.99) { 
+        result.textContent = `Seu IMC É DE ${calc.toFixed(2)} - OBESIDADE GRAU 2 (severa)`
+    }else {
+        result.textContent = `Seu IMC É DE ${calc.toFixed(2)} - OBESIDADE GRAU 3 (Mórbida)`
     }
 }
 
